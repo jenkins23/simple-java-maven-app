@@ -1,4 +1,4 @@
-# agent1 - Jenkinsfile
+// agent1
 pipeline {
     agent {
         docker {
