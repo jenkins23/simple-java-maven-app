@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'printenv'
+                echo "${params.VERZE}"
                 sh 'mvn -B -DskipTests clean package'
             }
         }
